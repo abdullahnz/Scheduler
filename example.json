@@ -1,0 +1,139 @@
+{
+    "sEcho": 1,
+    "iTotalRecords": 12,
+    "iTotalDisplayRecords": 12,
+    "aaData": [
+        [
+            "SENIN",
+            "07:30:00",
+            "TULT 0703",
+            "CII1H3",
+            "KALKULUS LANJUT",
+            "RMI",
+            "IF-45-10",
+            "09:30:00",
+            "TETAP"
+        ],
+        [
+            "SENIN",
+            "09:30:00",
+            "(A310) KU1.03.14",
+            "CII1I3",
+            "SISTEM DIGITAL",
+            "DVI",
+            "IF-45-10",
+            "12:30:00",
+            "TETAP"
+        ],
+        [
+            "SELASA",
+            "08:30:00",
+            "LAB 0704",
+            "CII1F4",
+            "ALGORITMA PEMROGRAMAN",
+            "SLL",
+            "IF-45-10",
+            "11:30:00",
+            "TETAP"
+        ],
+        [
+            "SELASA",
+            "12:30:00",
+            "(A208A) KU1.02.15",
+            "CII1F4",
+            "ALGORITMA PEMROGRAMAN",
+            "SLL",
+            "IF-45-10",
+            "15:30:00",
+            "TETAP"
+        ],
+        [
+            "SELASA",
+            "15:30:00",
+            "KU3.09.16",
+            "CII1G3",
+            "MATEMATIKA DISKRIT",
+            "IPL",
+            "IF-45-10",
+            "17:30:00",
+            "TETAP"
+        ],
+        [
+            "RABU",
+            "11:30:00",
+            "(A203B) KU1.02.06",
+            "CII1C2",
+            "STATISTIKA",
+            "SSI",
+            "IF-45-10",
+            "13:30:00",
+            "TETAP"
+        ],
+        [
+            "RABU",
+            "14:30:00",
+            "(A303A) KU1.03.05",
+            "UKI1C2",
+            "BAHASA INDONESIA",
+            "JNI",
+            "IF-45-GAB0910",
+            "16:30:00",
+            "TETAP"
+        ],
+        [
+            "KAMIS",
+            "07:30:00",
+            "TULT 0703",
+            "CII1H3",
+            "KALKULUS LANJUT",
+            "RMI",
+            "IF-45-10",
+            "09:30:00",
+            "TETAP"
+        ],
+        [
+            "KAMIS",
+            "10:30:00",
+            "(B308B) KU2.03.10",
+            "UKI2A2",
+            "PENDIDIKAN KEWARGANEGARAAN",
+            "EPS",
+            "IF-44-PAKETGAB01",
+            "12:30:00",
+            "TETAP"
+        ],
+        [
+            "JUMAT",
+            "09:30:00",
+            "KU3.02.17",
+            "CII1I3",
+            "SISTEM DIGITAL",
+            "DVI",
+            "IF-45-10",
+            "11:30:00",
+            "RESPONSI"
+        ],
+        [
+            "JUMAT",
+            "15:30:00",
+            "(A203B) KU1.02.06",
+            "CII1G3",
+            "MATEMATIKA DISKRIT",
+            "IPL",
+            "IF-45-10",
+            "17:30:00",
+            "TETAP"
+        ],
+        [
+            "SABTU",
+            "09:30:00",
+            "(A207A) KU1.02.13",
+            "CII1J3",
+            "PEMODELAN BASIS DATA",
+            "HAU",
+            "IF-45-10",
+            "12:30:00",
+            "TETAP"
+        ]
+    ]
+}
