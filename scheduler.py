@@ -69,16 +69,6 @@ class Scheduler:
             scheduler.write(calendar.to_ical())
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Used for convert igracias\' student subject to icalendar.ics file.')
-    parser.add_argument('-in', '--inp', action='store', type=str, help='select input file of subject data (default: data.json)') 
-    parser.add_argument('-out', '--out', action='store', type=str, help='select output file for ics file (default: schedule.ics)') 
-    parser.add_argument('--info', action='store', type=int, help='print information to stdout (default=1)') 
-    args = parser.parse_args()
-
-    infile  = args.inp if args.inp else 'data.json'
-    outfile = args.out if args.out else 'schedule.ics'
-    info    = args.info if args.info else 1
-
-    scheduler = Scheduler(filename = infile)
-    scheduler.parse(info = info, outfile = outfile)
+    scheduler = Scheduler(filename = 'data.json')
+    scheduler.parse(outfile = 'schedule.ics', info = True)
     
