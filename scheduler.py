@@ -5,6 +5,12 @@ import datetime, argparse
 import json 
 
 class Scheduler:
+    DAYS = {
+        'SENIN'  : 0,   'SELASA' : 1,
+        'RABU'   : 2,   'KAMIS'  : 3,
+        'JUMAT'  : 4,   'SABTU'  : 5,
+    }
+
     def __init__(self, filename = None):
         current_date = datetime.datetime.now()
         
@@ -28,7 +34,8 @@ class Scheduler:
         range_day_of_month = self.last_day_of_month(datetime.date(self.year, self.month, 1)).day
         
         if self.prev != course_day:
-            self.day += 1
+            self.day += self.DAYS.get(course_day) - \
+                        self.DAYS.get(self.prev)
 
         if self.day > range_day_of_month:
             self.day = self.day % range_day_of_month
@@ -40,9 +47,11 @@ class Scheduler:
 
         return course_day
     
-    def parse(self, info, outfile):
+    def parse(self, verbose, outfile):
         schedule = open(self.filename, 'rb').read()
         schedule = json.loads(schedule)['aaData']
+
+        print(schedule)
 
         calendar = Calendar()
        
@@ -60,7 +69,7 @@ class Scheduler:
             event.add('dtend', self.parse_time(end))
             event.add('rrule', weekly_freq)
             
-            if info:
+            if verbose:
                 print(f'Adding event {course} in {course_day} at {start} - {end} ({self.day}-{self.month}-{self.year})')
             
             calendar.add_component(event)
@@ -70,5 +79,5 @@ class Scheduler:
 
 if __name__ == "__main__":
     scheduler = Scheduler(filename = 'data.json')
-    scheduler.parse(outfile = 'schedule.ics', info = True)
+    scheduler.parse(outfile = 'schedule.ics', verbose = True)
     

@@ -13,18 +13,9 @@ Convert `Jadwal Mahasiswa`'s data from igracias telkom university to Google Cale
     ```sh
     # install all required modules
     $ python3 -m pip install -r requirements.txt
-    
-    # see advanced option
-    $ python3 scheduler.py -h
 
-    # default
+    # just run
     $ python3 scheduler.py
-    
-    # with custom input json file
-    $ python3 scheduler.py -in <infile>
-    
-    # with custom output ics file
-    $ python3 scheduler.py -out <outfile>
     ```
 7. You'll see `schedule.ics` file.
 8. The last step is you need to import `schedule.ics` to your google calendar.
