@@ -51,8 +51,6 @@ class Scheduler:
         schedule = open(self.filename, 'rb').read()
         schedule = json.loads(schedule)['aaData']
 
-        print(schedule)
-
         calendar = Calendar()
        
         for course_day, start, room, course_id, course, lecturer_id, grade, end, stat in schedule:
